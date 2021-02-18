@@ -123,6 +123,7 @@ GET IN TOUCH section styles
       -webkit-appearance: none;
       outline: none;
   }
+textarea.form-input {resize: vertical;}
 label {color: #0099ff; padding: 5px;} /* label styles */
 .submit-form-button {  /* form submit button style */
       position: relative;
