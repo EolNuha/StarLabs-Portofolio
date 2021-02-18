@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Portofolio | Eol Nuha</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="static/images/headerimg.png">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/styles/styles.css">
+</head>
+
+<body>
+  <div class="form-output" id="sending">
+    <p>Sending <i class="fa fa-spinner fa-spin"></i></p>
+  </div>
+  {% with messages = get_flashed_messages() %}
+  {% for msg in messages %}
+    <div class="form-output" id="hideMe">
+      <p>{{msg}}<i class="fa fa-check"></i></p>
+    </div>
+  {% endfor %}
+  {% endwith %}
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="topbtn"><span class="fa fa-angle-up"></button>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+            <img src="static/images/headerimg.png" width="500px" class="header-img">
+        </div>
+        <div class="column" style="padding: 100px 5px;">
+            <p class="header-intro">Hello, I am</p>
+            <hr class="devider header-devider">
+            <h1>EOL NUHA</h1>
+            <h2>
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Full Stack Developer", "Hardworking", "Embracing mentorship", "Team Member", "Positive Attitude", "Commited", "Curious", "Adaptability" ]'>
+                <span class="wrap"></span>
+                </a>
+            </h2>
+        </div>
+      </div>
+    </div>
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="-300 -150 950 380" >
+        <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/>
+    </svg>
+  </header>
+  <section>
+      <h3>About Me</h3>
+      <hr class="devider">
+      <p>First of all, let me introduce myself</p>
+      <div class="row">
+        <div class="about-me-column">
+          <h2>
+            Hi, I'm Eol Nuha<br>
+          </h2>
+          <h5>A Full Stack Web Developer</h5>
+          <p>
+            My passion for programming, started about two years ago, it's when i discovered this hole ocean of possibilities, of 
+            new intriguing things.<br>I'm a self taught programmer, I learned everything that i know from youtube tutorials and 
+            stackoverflow searches. But, the journey isn't over i still need to put my knowledge of programming to real life applications. 
+            With your company, i think i can change this world for the better! 
+          </p>
+          <a href="static/images/cv.pdf" download="cv">
+          <button class="download-cv-button">Download CV</button>
+          </a>
+          <button class="hire-me-button" onclick="hireMeFunction()">Hire Me</button>
+        </div>
+        <div class="about-me-column">
+          <img src="static/images/profile-picture.png" class="about-me-image">            
+        </div>
+
+      </div>
+  </section>
+  <section>
+    <h3>My Best Projects</h3>
+    <hr class="devider">  
+    <p>These are some of my best projects that i've done recently.</p>
+    <div class="row">
+      <div class="work-column">
+        <a href="http://172.105.66.99" target="_blank">
+          <div class="box-image">
+            <img src="static/images/movie-freaks.png" alt="5 Terre">
+            <div class="box-name">
+            <p>Movie Freaks</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="work-column">
+        <a href="http://cybercity-ks.com" target="_blank">
+          <div class="box-image">
+            <img src="static/images/cyber-city.png" alt="5 Terre">
+            <div class="box-name">
+            <p>Cyber City</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="work-column">
+        <a href="https://www.piecex.com/source-code/Tower-War-Game-1971" target="_blank">
+          <div class="box-image">
+            <img src="static/images/tower-war-game.png" alt="5 Terre">
+            <div class="box-name">
+            <p>Tower War Game</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="work-column">
+        <a href="https://www.piecex.com/source-code/Dinosaur-Game-1983" target="_blank">
+        <div class="box-image">
+          <img src="static/images/dino-game.png" alt="5 Terre">
+          <div class="box-name">
+          <p>Dinosaur Game</p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="work-column">
+        <a href="https://www.piecex.com/source-code/Website-for-Online-Ordering-1972" target="_blank">
+        <div class="box-image">
+          <img src="static/images/e-commerce.png" alt="5 Terre">
+          <div class="box-name">
+          <p>E-commerce Website</p>
+          </div>
+        </div>
+        </a>
+      </div>
+      <div class="work-column">
+        <a href="#">
+          <div class="box-image">
+            <img src="static/images/space-invader.png" alt="5 Terre">
+            <div class="box-name">
+            <p>Space Invader</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>Get In Touch</h3>
+    <hr class="devider">  
+    <p>Contact me, with the options below.</p>
+    <div class="row">
+      <div class="contact-me-column">
+        <i class="fa fa-phone"></i>+383 49 793 208<br>
+        <i class="fa fa-envelope"></i> eol.nuha22@gmail.com<br>
+        <a href="https://www.facebook.com/eol.nuha/"><i class="fa fa-facebook"></i> Eol Nuha<br></a>
+        <a href="https://www.linkedin.com/in/eol-nuha-a970b71b7/"><i class="fa fa-linkedin"></i> Eol Nuha<br></a>
+        <i class="fa fa-map-marker"></i> Ferizaj, Kosovo<br>
+      </div>
+      <div class="contact-me-column">
+        <div>
+          <div class="row">
+            <form method="POST" id="contact-form" action="/#contact-form">
+            <div class="contact-me-column">
+              <label>First name</label>
+              <input class="form-input" type="text" name="first" required>
+            </div>
+            <div class="contact-me-column">
+              <label>Last name</label>
+              <input class="form-input" type="text" name="last" required>
+            </div>
+            <div class="contact-me-column">
+              <label>E-mail</label>
+              <input class="form-input" type="email" name="email" required>
+            </div>
+            <div class="contact-me-column">
+              <label>Phone number</label>
+              <input class="form-input" type="tel" name="tel" required>
+            </div>
+            <label>Message</label>
+            <textarea class="form-input" name="message" required cols="60" rows="4" minlength="10">
+            </textarea>
+            <button class="submit-form-button" type="submit" name="submit">Send Message</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <h4>
+      This was my first project for StarLabs, hope you enjoy it.
+    </h4>
+  </footer>
+
+  <script src="static/styles/function.js"></script>
+</body>
+
+</html>
