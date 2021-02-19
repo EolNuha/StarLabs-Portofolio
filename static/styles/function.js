@@ -106,3 +106,31 @@ $(document).ready(function(){
         $("#sending").css("display", "block");
     });
   });
+
+
+/*
+
+Skills Chart
+
+*/
+
+var	$skills	= $( '.skills li' ),
+				$bars	= $( '.iconic-bar-chart-bar' );
+			
+function animateBar() {
+    var	$this	= $( this ),
+        number	= $this.attr( 'data-bar' ),
+        $bar	= $bars.filter( '.iconic-bar-chart-bar-' + number );
+        
+    $bar.css( 'transform', 'scaleY(1)' );
+}
+			
+function removeBar() {
+    var	$this	= $( this ),
+        number	= $this.attr( 'data-bar' ),
+        $bar	= $bars.filter( '.iconic-bar-chart-bar-' + number );
+
+    $bar.css( 'transform', 'scaleY(0)' );
+}
+
+$skills.hover( animateBar, removeBar );
