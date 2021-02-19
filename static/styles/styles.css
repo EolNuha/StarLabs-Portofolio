@@ -81,43 +81,15 @@ Skills Chart
 
 */
 
-.skills {
-    font:14px/18px sans-serif;
-    margin:20px 0;
-  }
-  
-  .skills li {
-    list-style: none;
-    margin: 15px 0 0;
-    cursor: pointer;
-    padding: 0 10px;
-  }
-  .skills li h3 {
-    font-size: 18px;
-    margin:0;
-  }
-  .skills li p {
-    margin: 0;
-    font-size: 12px;
-  }
-  .iconic-bar-chart-bar-1 {
-    stroke: rgba(0, 153, 255, 1);
-  }
-  .iconic-bar-chart-bar-2 {
-    stroke: rgba(0, 153, 255, 0.85);
-  }
-  .iconic-bar-chart-bar-3 {
-    stroke: rgba(0, 153, 255, 0.75);
-  }
-  .iconic-bar-chart-bar-4 {
-    stroke: rgba(0, 153, 255, 0.65);
-  }
-  .iconic-bar-chart-bar-5 {
-    stroke: rgba(0, 153, 255, 0.55);
-  }
-  .iconic-bar-chart-bar-shadow {
-    stroke: rgba(0, 0, 0, 0.33);
-  }
+.skills {font:14px/18px sans-serif; margin:20px 0;}
+.skills li {list-style: none; margin: 15px 0 0; cursor: pointer;padding: 0 10px;} 
+.skills li h3 {font-size: 18px;margin:0;}
+.skills li p {margin: 0;font-size: 12px;}
+.iconic-bar-chart-bar-1 {stroke: rgba(0, 153, 255, 1);}
+.iconic-bar-chart-bar-2 {stroke: rgba(0, 153, 255, 0.85);}
+.iconic-bar-chart-bar-3 {stroke: rgba(0, 153, 255, 0.75);}.iconic-bar-chart-bar-4 {stroke: rgba(0, 153, 255, 0.65);}
+.iconic-bar-chart-bar-5 {stroke: rgba(0, 153, 255, 0.55);}
+.iconic-bar-chart-bar-shadow {stroke: rgba(0, 0, 0, 0.33);}
   .iconic-bar-chart-bar {
     -webkit-transform: scaleY(0);
     -moz-transform: scaleY(0);
@@ -142,16 +114,10 @@ Skills Chart
     -o-transform: scaleY(1);
     transform: scaleY(1);
   }
-  .bar-chart-size {
-    width: 350px;
-    height: 350px;
-  }
-  @media screen and (max-width: 800px) {
-    .bar-chart-size {
-    width: 250px;
-    height: 250px;
-  }
-    }
+.bar-chart-size {width: 350px;height: 350px;}
+@media screen and (max-width: 800px) {
+    .bar-chart-size {width: 250px;height: 250px;}
+}
   
 
 /*
