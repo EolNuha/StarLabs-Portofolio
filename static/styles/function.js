@@ -134,3 +134,15 @@ function removeBar() {
 }
 
 $skills.hover( animateBar, removeBar );
+
+
+/*
+
+=========>
+Makes sections fadeIn as windows scrolls down
+=========>
+
+*/
+$('section').fadeInScroll({
+    minDistance:  60 * $(window).height() / 100
+    });
