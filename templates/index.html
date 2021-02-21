@@ -46,7 +46,7 @@
         <path d="M-314,267 C105,364 400,100 812,279" fill="none" stroke="white" stroke-width="120" stroke-linecap="round"/>
     </svg>
   </header>
-  <section>
+  <section class="section1">
       <h3>About Me</h3>
       <hr class="devider">
       <p>First of all, let me introduce myself</p>
@@ -73,7 +73,7 @@
 
       </div>
   </section>
-  <section>
+  <section class="section2">
     <h3>What I Can Do</h3>
       <hr class="devider">
       <p>These are my main skills as a developer</p>
@@ -149,7 +149,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="section3">
     <h3>My Best Projects</h3>
     <hr class="devider">  
     <p>These are some of my best projects that i've done recently.</p>
@@ -216,7 +216,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <section class="section4">
     <h3>Get In Touch</h3>
     <hr class="devider">  
     <p>Contact me, with the options below.</p>
@@ -249,7 +249,7 @@
               <input class="form-input" type="tel" name="tel" required>
             </div>
             <label>Message</label>
-            <textarea class="form-input" name="message" minlength="10" required cols="60" rows="4"></textarea>
+            <textarea class="form-input" name="message" required cols="60" rows="4" minlength="10"></textarea>
             <button class="submit-form-button" type="submit" name="submit">Send Message</button>
           </form>
           </div>
@@ -263,6 +263,13 @@
       This was my first project for StarLabs, hope you enjoy it.
     </h4>
   </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="../static/styles/fadeInScroll.jQuery.js"></script>
+      <script>
+      $('section').fadeInScroll({
+minDistance:  60 * $(window).height() / 100
+});
+    </script>
   <script src="../static/styles/function.js"></script>
 </body>
 
